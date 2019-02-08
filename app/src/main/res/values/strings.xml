@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">OYOT.V1</string>
+    <string name="navigation_draw_open">Open navigation drawer</string>
+    <string name="navigation_draw_close">Close navigation drawer</string>
+    <string name="pass_hint">Password ...</string>
+    <string name="email_hint">Email..</string>
+    <string name="login_btn_txt">Login</string>
+    <string name="login_reg_btn_txt">Register</string>
+    <string name="reg_confirm_pass_text">Confirm Password</string>
+    <string name="reg_pass_text">Password</string>
+    <string name="action_search_text">Search</string>
+    <string name="action_profile_text">Profile</string>
+    <string name="action_setting_text">Settings</string>
+    <string name="action_logout_text">Logout</string>
+    <string name="reg_btn_text">Register</string>
+    <string name="reg_login_text">Already Registered? Login</string>
+</resources>
