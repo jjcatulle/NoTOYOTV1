@@ -1,21 +1,20 @@
 package com.example.oyotv1;
 
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
-import android.support.v4.app.ActivityCompat;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
-import android.view.Gravity;
-import android.view.Menu;
 import android.view.MenuItem;
+
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
 
@@ -53,9 +52,18 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case R.id.nav_logout:
                 logOut();
                 break;
+            case R.id.nav_profile:
+                profile();
+                break;
             /////make more case statements for functions of the nav header
         }
         return true;
+    }
+
+    private void profile() {
+        Intent setupIntent = new Intent(MainActivity.this, SetupActivity.class);
+        startActivity(setupIntent);
+        finish();
     }
 
     @Override

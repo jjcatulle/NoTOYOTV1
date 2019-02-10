@@ -70,12 +70,12 @@ public class RegisterActivity extends AppCompatActivity {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 if (task.isSuccessful()){
-//
-//                                    Intent setupIntent = new Intent(RegisterActivity.this, SetupActivity.class);
-//                                    startActivity(setupIntent);
-//                                    finish();
-                                    Toast.makeText(RegisterActivity.this," Registering",Toast.LENGTH_LONG).show();
-                                    sendToMain();
+                                    Toast.makeText(RegisterActivity.this,"Profile Setup",Toast.LENGTH_LONG).show();
+
+                                    Intent setupIntent = new Intent(RegisterActivity.this, SetupActivity.class);
+                                    startActivity(setupIntent);
+                                    finish();
+
 
                                 }else {
 

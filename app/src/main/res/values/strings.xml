@@ -14,4 +14,6 @@
     <string name="action_logout_text">Logout</string>
     <string name="reg_btn_text">Register</string>
     <string name="reg_login_text">Already Registered? Login</string>
+    <string name="setup_name_hint">Name</string>
+    <string name="setup_btn_name_text">Save Profile</string>
 </resources>
