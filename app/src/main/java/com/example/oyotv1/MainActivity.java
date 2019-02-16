@@ -10,6 +10,7 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -22,6 +23,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     ///logout//
     private FirebaseAuth mAuth;
+    private TextView navName;
+    private TextView navEmail;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +34,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         setContentView(R.layout.activity_main);
 
         mAuth=FirebaseAuth.getInstance();
+
+        navName=findViewById(R.id.nav_name);
+        navEmail=findViewById(R.id.nav_email);
 
         //toolbar
         Toolbar toolbar=findViewById(R.id.toolbar);

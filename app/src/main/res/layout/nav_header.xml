@@ -14,14 +14,17 @@
         android:src="@mipmap/ic_launcher_round"/>
 
     <TextView
+        android:id="@+id/nav_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingTop="8dp"
         android:text="Jean Catulle"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
     <TextView
+        android:id="@+id/nav_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="catullej@oyot.com"/>
+        android:text="catullej@oyot.com" />
 
 </LinearLayout>
